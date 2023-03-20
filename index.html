@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- custom font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
     <!-- end custom font -->
 
-    <title>We walk to you</title>
+    <title>violence</title>
 
     <!-- styles -->
     <style>
       body {
-        font-family: "Dosis", sans-serif;
+       font-family: 'Dancing Script', cursive;
         margin: 2em;
-        background-color: #000;
-        color: #fff;
-        font-size: 1.2em;
+        background-color: blue;
+        color: yellow;
+        font-size: 1.5em;
       }
       h1 {
-        color: #fff;
+        color: yellow;
       }
       #poem > div {
         height: 1.2em;
@@ -35,13 +34,13 @@
     </style>
   </head>
   <body>
-    <h1>We walk to you</h1>
+    <h1>violence</h1>
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "jimmy".split(","),
+        verbs = "punched,kicked,jabbed,spining elbowed,abused,assaulted,flying knee'd,slamdunked,eviscerated,slapped,obliterated".split(","),
+        objects = "my dad,small children,animals,poor people,priests,".split(",");
       // set up the counter
       let counter = 0;
 
@@ -61,7 +60,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          "  " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
